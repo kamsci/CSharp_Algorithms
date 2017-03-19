@@ -1,0 +1,9 @@
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\UnitTestAlgorithms\bin\Debug\UnitTestAlgorithms.dll
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\UnitTestAlgorithms\bin\Debug\UnitTestAlgorithms.pdb
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\UnitTestAlgorithms\bin\Debug\Algorithms.exe
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\UnitTestAlgorithms\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\UnitTestAlgorithms\bin\Debug\Algorithms.pdb
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\UnitTestAlgorithms\obj\Debug\UnitTestAlgorithms.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\UnitTestAlgorithms\obj\Debug\UnitTestAlgorithms.dll
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\UnitTestAlgorithms\obj\Debug\UnitTestAlgorithms.pdb
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Algorithms\UnitTestAlgorithms\bin\Debug\Algorithms.exe.config

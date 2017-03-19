@@ -1,0 +1,6 @@
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+\\mac\home\documents\visual studio 2015\Projects\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
