@@ -188,5 +188,75 @@ namespace UnitTestAlgorithms
             Assert.AreEqual(testNode2, testList.Head);
             Assert.AreEqual(testNode3, actualNext);
         }
+        [TestMethod]
+        public void ReturnNthToLast_OutofRange_Test()
+        {
+            // Arrange
+            LinkedList testList = new LinkedList();
+            Node testNode1 = new Node(4);
+            Node testNode2 = new Node(8);
+            Node testNode3 = new Node(12);
+            Node testNode4 = new Node(8);
+            Node testNode5 = new Node(4);
+
+            testList.AddNodeToEnd(testNode1);
+            testList.AddNodeToEnd(testNode2);
+            testList.AddNodeToEnd(testNode3);
+            testList.AddNodeToEnd(testNode4);
+            testList.AddNodeToEnd(testNode5);
+
+            // Act
+            Node result = testList.ReturnNthToLast(6);
+
+            // Assert
+            Assert.AreEqual(null, result);
+        }
+        [TestMethod]
+        public void ReturnNthToLast_IsHead_Test()
+        {
+            // Arrange
+            LinkedList testList = new LinkedList();
+            Node testNode1 = new Node(4);
+            Node testNode2 = new Node(8);
+            Node testNode3 = new Node(12);
+            Node testNode4 = new Node(8);
+            Node testNode5 = new Node(4);
+
+            testList.AddNodeToEnd(testNode1);
+            testList.AddNodeToEnd(testNode2);
+            testList.AddNodeToEnd(testNode3);
+            testList.AddNodeToEnd(testNode4);
+            testList.AddNodeToEnd(testNode5);
+
+            // Act
+            Node result = testList.ReturnNthToLast(5);
+
+            // Assert
+            Assert.AreEqual(testNode1, result);
+            Assert.AreEqual(testList.Head, result);
+        }
+        [TestMethod]
+        public void ReturnNthToLast_Test()
+        {
+            // Arrange
+            LinkedList testList = new LinkedList();
+            Node testNode1 = new Node(4);
+            Node testNode2 = new Node(8);
+            Node testNode3 = new Node(12);
+            Node testNode4 = new Node(8);
+            Node testNode5 = new Node(4);
+
+            testList.AddNodeToEnd(testNode1);
+            testList.AddNodeToEnd(testNode2);
+            testList.AddNodeToEnd(testNode3);
+            testList.AddNodeToEnd(testNode4);
+            testList.AddNodeToEnd(testNode5);
+
+            // Act
+            Node result = testList.ReturnNthToLast(3);
+
+            // Assert
+            Assert.AreEqual(testNode3, result);
+        }
     }
 }
