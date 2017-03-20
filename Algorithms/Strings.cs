@@ -77,8 +77,10 @@ namespace Algorithms
             char[] secondArr = sourceSecond.ToArray();
             Array.Sort(firstArr);
             Array.Sort(secondArr);
+            string first= new string(firstArr);
+            string second = new string(secondArr);
 
-            if(firstArr.ToString() == secondArr.ToString())
+            if(first.Equals(second, StringComparison.InvariantCultureIgnoreCase))
             {
                 return true;
             }
