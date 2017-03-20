@@ -141,13 +141,12 @@ namespace Algorithms
 
        public static string RemoveInput(string remove, string source)
         {
-            string resultString = String.Empty;
-            string lastLetter = remove[remove.Length - 1].ToString();
-
             if (source.Length == 0 || remove.Length == 0 || remove.Length > source.Length)
             {
                 return source;
             }
+
+            string lastLetter = remove[remove.Length - 1].ToString();
 
             for (int i = remove.Length - 1; i < source.Length; i++)
             {
@@ -162,22 +161,24 @@ namespace Algorithms
                     {
                         string temp = source.Remove(i, 1);
                         source = temp;
-                        if (source.Length != 0) { i--; }
+                        if (source.Length != 0)
+                        {
+                            i--;
+                        }
                     }
-                    if(Strings.isRemoveInSource(remove, source, i))
+                    else if(Strings.isRemoveInSource(remove, source, i))
                     {
                         string temp = source.Remove(i - (remove.Length - 1), remove.Length);
                         source = temp;
-                        if (source.Length > remove.Length)
+                        if (source.Length != 0)
                         {
-                            i = i - remove.Length;
+                            i--;
                         }
-                        else if (source.Length == remove.Length) { i--; }
                     }
                 }
             }
 
-            return resultString;
+            return source;
         }
 
         #region
@@ -203,7 +204,8 @@ namespace Algorithms
             }
             for (int j = remove.Length - 2; j >= 0; j--)
             {
-                if (!source[idx - 1].Equals(remove[j]))
+                idx--;
+                if (!source[idx].Equals(remove[j]))
                 {
                     return false;
                 }

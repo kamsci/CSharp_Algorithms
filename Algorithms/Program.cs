@@ -36,7 +36,7 @@ namespace Algorithms
                     case "3":
                         Console.Write("Enter the character group to be removed: ");
                         string input3first = Console.ReadLine();
-                        Console.Write("Enter the sentance or word to remove from: ");
+                        Console.Write("Enter a sentance or word: ");
                         string input3second = Console.ReadLine();
                         Console.WriteLine("Result: {0}", Strings.RemoveInput(input3first, input3second));
                         break;
