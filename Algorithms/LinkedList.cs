@@ -25,6 +25,7 @@ namespace Algorithms
             get { return count; }
         }
 
+        #region Methods
         public void AddNodeToEnd(Node node)
         {
             if(Head == null)
@@ -54,8 +55,10 @@ namespace Algorithms
             }
             count++;
         }
-        
-        // Remove duplicates
+
+        /// <summary>
+        /// Remove duplicates
+        /// </summary>
         public void RemoveDuplicateNodes()
         {
             Dictionary<int, Node> uniqueNodes = new Dictionary<int, Node>();
@@ -89,10 +92,35 @@ namespace Algorithms
                 }
             }
         }
+        /// <summary>
+        /// Find nth to last element
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public Node ReturnNthToLast(int n)
+        {
+            if(count < n)
+            {
+                return null;
+            }
+            if(count == n)
+            {
+                return head;
+            }
+            Node track = head;
+            int travel = count - n;
 
-        // Find nth to last element
-
-        // Given a node, delete from Linked list
+            while(travel > 0)
+            {
+                track = track.Next;
+                travel--;
+            }
+            return track;
+        }
+        /// <summary>
+        /// Given a node, delete from Linked list
+        /// </summary>
+        /// <param name="node"></param>
         public void DeleteNode(Node node)
         {
             Node track = head;
@@ -125,5 +153,6 @@ namespace Algorithms
                 return;
             }
         }
+        #endregion
     }
 }
