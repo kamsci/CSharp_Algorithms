@@ -53,6 +53,7 @@
     <Compile Include="StringUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LinkedList_Nodes.cs" />
+    <Compile Include="ArraysAndFriends_UnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Algorithms\Algorithms.csproj">
